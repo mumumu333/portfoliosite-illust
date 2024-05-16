@@ -1,0 +1,250 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  background-color: #F9F4F4;
+  color: #1B1B1B;
+  font-family: 'Montserrat Alternates','Noto Sans JP', sans-serif;
+}
+
+/*header*/
+.header {
+  width: 90%;
+  margin: 20px auto 0;
+  max-width: 1000px;
+}
+.header h1 {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 6.3rem;
+  font-weight: 100;
+}
+.site-nav {
+  width: 350px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.site-nav span {
+  font-size: 1.4rem;
+  display: block;
+}
+.main-view {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+}
+.main-view img {
+  width: 100%;
+  border-radius: 10px;
+  align-self: flex-start;
+}
+.main-view :nth-child(1) {
+  width: 59%;
+}
+.main-view :nth-child(2) {
+  width: 40%;
+}
+.main-view :nth-child(3) {
+  margin-top: 8px;
+  width: 40%;
+}
+.main-view :nth-child(4) {
+  margin-top: 8px;
+  width: 59%;
+}
+
+/*main-contents*/
+.main-contents {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+}
+.main-contents section {
+  margin-top: 80px;
+}
+.main-contents h2 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  border-bottom: 0.5px solid #8D8D8D;
+  margin-bottom: 25px;
+}
+.main-contents h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.main-contents .profile h3 {
+  margin-bottom: 12px;
+}
+.main-contents p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+.komoji {
+  font-size: 1.5rem;
+}
+.contens-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.contents-flex-note {
+  width: 49%;
+}
+.contents-title-box {
+  display: flex;
+  margin: 12px 0;
+  width: 180px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sns-icons-box {
+  display: flex;
+  width: 76px;
+  justify-content: space-between;
+}
+.sns-icon {
+  width: 25px;
+  display: block;
+}
+.sns-icon img{
+  width: 100%;
+}
+.contact p span {
+  display: block;
+  margin-top: 10px;
+}
+
+/*slick*/
+.slider {
+  width: 48%;
+}
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+.slick-arrow {
+  z-index: 2;
+}
+.slick-next::before,
+.slick-next::after,
+.slick-prev::before,
+.slick-prev::after {
+  position: absolute!important;
+  top: 0!important;
+  bottom: 0!important;
+  margin: auto!important;
+  content: ""!important;
+  vertical-align: middle;
+}
+.slick-next::after,
+.slick-prev::after {
+  width: 18px;
+  height: 18px;
+  border-top: 1.5px solid #8D8D8D;
+  border-right: 1.5px solid #8D8D8D;
+}
+/* next */
+.slick-next {
+  right: 3%!important;
+}
+.slick-next::after {
+  right: 3%!important;
+  transform: rotate(45deg);
+}
+/*prev*/
+.slick-prev {
+  left: 3%!important;
+}
+.slick-prev::after {
+  left: 3%!important;
+  transform: rotate(-135deg);
+}
+
+/*footer*/
+.js-scroll-top {
+  display: none;
+  position: fixed;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  border: solid 2px #8D8D8D;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 3;
+}
+.js-scroll-top:hover {
+  opacity: 0.5;
+}
+.js-scroll-top a {
+  display: none;
+}
+.arrow {
+  margin: 14px auto 0;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #8D8D8D;
+  border-right: 3px solid #8D8D8D;
+  transform: rotate(-45deg);
+  border-radius: 1.5px;
+}
+footer {
+  margin: 100px 0 10px;
+  text-align: center;
+}
+footer span {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width:600px) {
+  .header {
+    margin-top: 15px;
+  }
+  .header h1 {
+    margin-top: 25px!important;
+  }
+  .main-contents section:first-child {
+    margin-top: 8px;
+  }
+  .main-contents h2:first-child,
+  .main-contents h2:nth-child(2) {
+    margin-top: 50px;
+  }
+  .contens-flex {
+    display: block;
+  }
+  .slider {
+    width: 100%;
+  }
+  .contents-flex-note {
+    width: 100%;
+  }
+  .contents-title-box {
+    width: 170px;
+  }
+  .site-nav {
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 4.5rem;
+    margin-top: 50px;
+  }
+  .main-contents h2 {
+    font-size: 3rem;
+  }
+  .main-contents h3 {
+    font-size: 1.8rem;
+  }
+  .js-scroll-top {
+    right: 20px;
+    bottom: 15px;
+  }
+}
